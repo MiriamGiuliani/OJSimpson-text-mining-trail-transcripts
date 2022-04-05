@@ -54,6 +54,7 @@ def preprocessing_transctipts_text(directory, df):
             description
             fh.close()
 
+            # Store dialogs and the descriptive part of the transcript in two different files
             fh = open("dialogs.txt", "w")
             fh.write(dialogs)
             fh.close()
@@ -467,3 +468,4 @@ def preprocessing_transctipts_text(directory, df):
             
             # Append the df of each file under the previous one
             df = df.append(df1, ignore_index = True)
+    return df
