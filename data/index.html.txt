@@ -1,0 +1,582 @@
+<!doctype html public "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<TITLE>Jack Walraven's Simpson Trial Transcripts</TITLE>
+<META NAME="AUTHOR" CONTENT="Jack Walraven">
+<META name="description" content="Jack Walraven's Simpson trial transcripts">
+<META name="keywords" content="OJ, Simpson, simpson trial, simpson civil trial, simpson criminal trial, simpson trial transcripts, depositions, law, court documents, Jack Walraven">
+<STYLE TYPE="text/css">
+<!--
+A:link { color: blue;text-decoration: none }
+A:active { color: red;text-decoration: none }
+A:visited { color: blue;text-decoration: none }
+
+BODY { font-family: arial, helvetica, sans-serif; }
+-->
+</STYLE>
+
+</HEAD>
+<BODY bgcolor="#ffffff">
+<CENTER>
+<TABLE BORDER="0" WIDTH="780">
+	<TR>
+		<TD ALIGN="CENTER">
+
+
+		<P><FORM METHOD="POST"
+		ACTION="http://www.picosearch.com/cgi-bin/ts.pl">
+		<INPUT TYPE="HIDDEN" NAME="index" VALUE="107107">
+		<TABLE BGCOLOR="WHITE" CELLSPACING=0 CELLPADDING=0 BORDER=0><TR><TD>
+		<TABLE BGCOLOR="WHITE" CELLSPACING=2 CELLPADDING=0 BORDER=0>
+		<TR><TD><A HREF="http://www.picosearch.com/">
+		<IMG BORDER="0" SRC="http://www.picosearch.com/picosmall.gif"
+		ALT="PicoSearch"></A><BR></TD>
+		<TD><INPUT TYPE="TEXT" NAME="query" VALUE="" SIZE="20"></TD>
+		<TD><INPUT TYPE="SUBMIT" VALUE="Search This Site"></TD></TR>
+		</TABLE></TD></TR></TABLE></FORM><P>
+
+
+		<H1>The Simpson Trial Transcripts</H1>
+		This site is maintained by <A href="http://walraven.org/">Jack Walraven</A>.
+		<BR><BR>
+		<P ALIGN="left">Read what the NY Times had to say about this site back in 1995:  <A HREF="http://query.nytimes.com/gst/fullpage.html?res=990CE1D71538F937A25751C0A963958260&sec=&spon=&pagewanted=print">Discussion of the O. J. Simpson Murder Trial Is On-Line as Well as on the Air -- N.Y. Times, February 14, 1995.</A></P>
+
+		<P ALIGN="left">Want to know what they said during those sidebars in the criminal trial? Read <A HREF="sb-best.html">Best of the Sidebars in the OJ Simpson Trial</A>.</P>
+
+		</TD>
+	</TR>
+
+</TABLE>
+<HR WIDTH="780">
+<P>
+<TABLE BORDER="0" WIDTH="780">
+	<TR>
+		<TD ALIGN="LEFT" WIDTH="50%">
+		<FONT SIZE="+1" COLOR="Maroon">THE CRIMINAL TRIAL</FONT><P>
+		<B><A HREF="#lists">Jury & Witness Lists</A></B><BR>
+		<B><A HREF="#transcripts">Trial Transcripts</A></B><BR>
+		<B><A HREF="#jurors">Juror Interviews</A></B><BR>
+		<B><A HREF="#motions">Motions and Court Orders</A></B><BR>
+		<B><A HREF="#evidence">Items Introduced into Evidence</A></B><BR>
+		<B><A HREF="#prelim">Preliminary Hearings and Grand Jury</A></B>
+		</TD>
+		<TD ALIGN="RIGHT" VALIGN="TOP" WIDTH="50%">
+		<FONT SIZE="+1" COLOR="Maroon">THE CIVIL TRIAL</FONT><P>
+		<B><A HREF="#lists2">Jury & Witness Lists</A></B><BR>
+		<B><A HREF="#transcripts2">Trial Transcripts</A></B><BR>
+		<B><A HREF="#motions2">Suits, Motions and Court Orders</A></B><BR>
+		<B><A HREF="#depositions">Depositions and Interviews</A></B><BR>
+		</TD>
+	</TR>
+</TABLE>
+<P>
+<HR WIDTH="780">
+<FONT SIZE="+2" COLOR="Maroon">THE CRIMINAL TRIAL</FONT><P>
+<A NAME="lists"><B>The Jury and Witness Lists</B></A>
+<TABLE BORDER="1" WIDTH="780" CELLPADDING="5">
+	<TR>
+		<TD ALIGN="CENTER"  WIDTH="50%">
+		<A href="ojstats.html">Trial Statistics</A>
+		</TD>
+		<TD ALIGN="CENTER"  WIDTH="50%">
+		<A href="pwitness.html">Prosecution Witness list</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="the_jury.html">Members of the Jury</A>
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="dwitness.html">Defense Witness list</A>
+		</TD>
+	</TR>
+</TABLE>
+<P>
+<A NAME="transcripts"><B>Trial Transcripts</B><BR>
+<FONT SIZE="-1">As of mid-April 1995, all transcripts were converted to proper case thanks to
+the efforts of <B>Suzanne Chin Langley</B>.</FONT>
+<TABLE BORDER="1" WIDTH="780" CELLPADDING="5">
+	<TR>
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<A href="oj-jan.html">January '95</A> transcripts
+		</TD>
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<A href="oj-feb.html">February '95</A> transcripts
+		</TD>
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<A href="oj-mar.html">March '95</A> transcripts
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="oj-apr.html">April '95</A> transcripts
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="oj-may.html">May '95</A> transcripts
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="oj-jun.html">June '95</A> transcripts
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="oj-jul.html">July '95</A> transcripts
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="oj-aug.html">August '95</A> transcripts
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="oj-sep.html">September 95</A> transcripts
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER" COLSPAN="3">
+		<B>The Verdict:</B> <A href="oct02-31.html">October 2, 3 and 31, 1995</A> transcripts
+		</TD>
+	</TR>
+</TABLE>
+<P>
+<A NAME="jurors"><B>Transcripts of Juror Interviews</B></A>
+<TABLE BORDER="1" WIDTH="780" CELLPADDING="5">
+	<TR>
+		<TD ALIGN="CENTER" WIDTH="50%">
+		<A href="228-320.html">Dismissed jurors 228 and 320</A>
+		</TD>
+		<TD ALIGN="CENTER" WIDTH="50%">
+		<A href="harris1.html">Dismissed juror Jeanette Harris (462)</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="kennedy.html">Dismissed juror Tracy Kennedy (602)</A>
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="jur-1427.html">Juror 1427</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="jurint-1.html">Juror revolt - April 18</A>
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="jurint-2.html">Juror revolt - April 19</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="jurint-3.html">Juror revolt - April 21</A>
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="buntcrav.html">Dismissed jurors Bunten and Craven</A>
+		</TD>
+	</TR>
+</TABLE>
+<P>
+<A NAME="motions"><B>Motions and Court Orders</B></A>
+<TABLE BORDER="1" WIDTH="780" CELLPADDING="5">
+	<TR>
+		<TD ALIGN="CENTER"  WIDTH="50%">
+		Judge Ito's <A href="fhr_tps1.html">first ruling on the Fuhrman tapes</A>.
+		</TD>
+		<TD ALIGN="CENTER"  WIDTH="50%">
+		Judge Ito's <A href="fhr_tps2.html">final decision on the Fuhrman tapes</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="target.html">Judge Ito's ruling</A> on juror targeting by the prosecution.
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="jurors.html">Defense motion</A> requesting an evidentiary
+		hearing re selective juror disqualification.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="brown.html">Louis Brown's</A> wrongful death suit.
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="m-allen.html">Defense request</A> for Marcus Allen to appear as a witness.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="aut-pix.html">Judge Lance Ito's ruling</A> on autopsy pictures.
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="autop-rg.html">Coroner's report</A> on Ron Goldman's autopsy.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="autop-nb.html">Coroner's report</A> on Nicole Brown's autopsy.
+		</TD>
+		<TD ALIGN="CENTER">
+		Mark Fuhrman's <A href="fuhrsuit.html">lawsuit</A> against New Yorker magazine et al.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="alibi-d.html">Defense motion</A> whether Yamauchi's statement regarding
+		Simpson's alibi is reason to bring into evidence Simpson's statement to the LAPD.
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="alibi-p.html">Prosecution's counter-motion</A> regarding Yamauchi
+		(includes part of Simpson's statement to LAPD).
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Robert Kardashian's proposed <A href="kardash1.html">stipulation</A>
+		regarding O.J.'s luggage.
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="mistrial.html">Defense motion</A> requesting a hearing
+		on whether the prosecution is attempting to remove jurors and causing a mistrial.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="respond.html">Prosecution's response</A> to a defense motion requesting
+		a hearing on prosecutorial misconduct.
+		</TD>
+		<TD ALIGN="CENTER">
+		Court ruling on <A href="golden.html">Dr. Golden's threat</A>
+		to "kill all the lawyers."
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Court ruling on <A href="dna.html">DNA evidence</A>.
+		</TD>
+		<TD ALIGN="CENTER">
+		Defense motion requesting a hearing on <A href="ojmot46.html">prosecutorial misconduct</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Judge Ito orders <A href="lopez.html">sanctions</A> on defense failure to disclose Lopez tape.
+		</TD>
+		<TD ALIGN="CENTER">
+		Court order related to discovery of <A href="fuhrman.html">Fuhrman</A> records.
+		</TD>
+	</TR>
+</TABLE>
+<P>
+<A NAME="evidence"><B>Items Introduced into Evidence</B></A>
+<TABLE BORDER="1" WIDTH="780" CELLPADDING="5">
+	<TR>
+		<TD ALIGN="CENTER"  WIDTH="50%">
+		<A href="911-1993.html">Nicole's 911 call of 1993</A>.
+		</TD>
+		<TD ALIGN="CENTER"  WIDTH="50%">
+		<A href="nbs-ojs.html">Nicole's letter to O.J.</A> seeking a reconciliation.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Kathleen Bell's <A href="bell.html">Letter</A> to the Defense Team.
+		</TD>
+		<TD ALIGN="CENTER">
+		Fuhrman <A href="fuhr-rpt.html">Memo</A> on 1985 Domestic Dispute.
+		</TD>
+	</TR>
+</TABLE>
+<P>
+<A NAME="prelim"><B>The Preliminary Hearings</B></A>
+<TABLE BORDER="1" WIDTH="780" CELLPADDING="5">
+	<TR>
+		<TD ALIGN="CENTER" COLSPAN="3">
+		The Preliminary Hearings <a href="ph_witns.html">Witness List</a>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<a href="ph_jun30.html">June 30, 1994</a> transcript
+		</TD>
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<a href="ph_jul01.html">July 1, 1994</a> transcript
+		</TD>
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<a href="ph_jul05.html">July 5, 1994</a> transcript
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<a href="ph_jul06.html">July 6, 1994</a> transcript
+		</TD>
+		<TD ALIGN="CENTER">
+		<a href="ph_jul07.html">July 7, 1994</a> transcript
+		</TD>
+		<TD ALIGN="CENTER">
+		<a href="ph_jul08.html">July 8, 1994</a> transcript
+		</TD>
+	</TR>
+</TABLE>
+<P>
+<B>The Grand Jury Proceedings</B>
+<TABLE BORDER="1" WIDTH="780" CELLPADDING="5">
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<a href="gj_pt1.html">June 17, 18, 1994</a> transcript
+		</TD>
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<a href="gj_pt2.html">June 21, 1994</a> transcript
+		</TD>
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<a href="gj_pt3.html">June 22, 23, 1994</a> transcript
+		</TD>
+	</TR>
+</TABLE>
+<P>
+<HR WIDTH="780">
+<FONT SIZE="+2" COLOR="Maroon">THE CIVIL TRIAL</FONT><P>
+<A NAME="lists2"><B>The Jury and Witness Lists</B></A>
+<TABLE BORDER="1" WIDTH="780" CELLPADDING="5">
+	<TR>
+		<TD ALIGN="CENTER"  WIDTH="50%">
+		Actual List of <A HREF="p_wits.html">Plaintiffs' Witnesses</A> and when they appeared.
+		</TD>
+		<TD ALIGN="CENTER"  WIDTH="50%">
+		Actual List of <A HREF="d_wits.html">Defense Witnesses</A> and when they appeared.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		The Civil Trial <A HREF="punitiv.html">Jury Verdict Form<BR> (Punitive Damages)</A>.
+		</TD>
+		<TD ALIGN="CENTER">
+		The Civil Trial <A HREF="ver_form.html">Jury Verdict Form (Liability)</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN="2" ALIGN="CENTER">
+		The <A HREF="c_jury.html">civil trial jury</A> as seated on October 18th.
+		</TD>
+	</TR>
+</TABLE>
+<P>
+<A NAME="transcripts2"><B>Trial Transcripts</B></A>
+<TABLE BORDER="1" WIDTH="780" CELLPADDING="5">
+	<TR>
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<A href="oct96.html">October '96</A> transcripts
+		</TD>
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<A href="nov96.html">November '96</A> transcripts
+		</TD>
+		<TD ALIGN="CENTER" WIDTH="33%">
+		<A href="dec96.html">December '96</A> transcripts
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A href="jan97.html">January '97</A> transcripts
+		</TD>
+		<TD ALIGN="CENTER">
+		<A href="feb97.html">February '97</A> transcripts
+		</TD>
+		<TD ALIGN="CENTER">
+		</TD>
+	</TR>
+</TABLE>
+<P>
+<A NAME="motions2"><B>Suits, Motions and Court Orders</B></A>
+<TABLE BORDER="1" WIDTH="780" CELLPADDING="5">
+	<TR>
+		<TD ALIGN="CENTER"  WIDTH="50%">
+		Civil suit filed by the <A href="brn_suit.html">Brown</A> family.
+		</TD>
+		<TD ALIGN="CENTER"  WIDTH="50%">
+		Civil suit filed by the <A href="gld_suit.html">Goldman</A> family.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Judge Fujisaki's ruling <A HREF="hf_gag.html">limiting media coverage &amp; gag order</A>.
+		</TD>
+		<TD ALIGN="CENTER">
+		Defense motion to <A HREF="dm_01.html">bar disclosure of Simpson's financial status</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Defense motion to <A HREF="dm_02.html">bar Nicole's &quot;he's going to kill me&quot; statement to the police</A> in 1989.
+		</TD>
+		<TD ALIGN="CENTER">
+		Defense motion to <A HREF="dm_03.html">bar testimony about Simpson's &quot;stalking&quot; or &quot;battering&quot;</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Defense motion to <A HREF="dm_04.html">bar the personal opinions of witnesses</A> about Simpson's guilt.
+		</TD>
+		<TD ALIGN="CENTER">
+		Defense motion to <A HREF="dm_05.html">bar testimony about Simpson's drug use &amp; adultery</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Defense motion to <A HREF="dm_06.html">bar Nicole's out-of-court statements</A> about her fear of Simpson.
+		</TD>
+		<TD ALIGN="CENTER">
+		Plaintiff motion (Brown) to <A HREF="pm_01.html">bar reference to the Brown family selling items/stories to the media</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Plaintiff motion (Brown) to <A HREF="pm_03.html">bar reference to Simpson's financial support of the Browns</A>.
+		</TD>
+		<TD ALIGN="CENTER">
+		Plaintiff motion (Goldman) to <A HREF="pm_07.html">bar &quot;evidence was planted&quot; theory</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Plaintiff declaration (Petrocelli) <A HREF="pm_02.html">supporting &quot;evidence was planted&quot; motion</A>.
+		</TD>
+		<TD ALIGN="CENTER">
+		Plaintiff motion (Goldman) to <A HREF="pm_04.html">bar &quot;glove was planted&quot; theory</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Plaintiff motion (Goldman) to <A HREF="pm_05.html">bar &quot;Rockingham blood was planted&quot; theory</A>.
+		</TD>
+		<TD ALIGN="CENTER">
+		Plaintiff motion (Goldman) to <A HREF="pm_10.html">bar &quot;Bronco blood was planted&quot; theory</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Plaintiff motion (Goldman) to <A HREF="pm_06.html">bar reference to Fuhrman's racism</A>.
+		</TD>
+		<TD ALIGN="CENTER">
+		Plaintiff motion (Goldman) to <A HREF="pm_08.html">bar reference to Fuhrman's invocation of the 5th</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Plaintiff motion (Goldman) to <A HREF="pm_09.html">bar reference to Faye Resnick's drug use</A>.
+		</TD>
+		<TD ALIGN="CENTER">
+		Plaintiff motion (Goldman) to <A HREF="pm_11.html">establish chain of custody of evidence</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		<A HREF="oj-lange.html">Cell phone calls</A> between Simpson and Detective Lange during the Bronco chase.
+		</TD>
+		<TD ALIGN="CENTER">
+		<A HREF="nb-to-oj.html">Nicole's letter to OJ</A> introduced on January 13th.
+		</TD>
+	</TR>
+</TABLE>
+<P>
+<A NAME="depositions"><B>Depositions and Interviews</B></A>
+<TABLE BORDER="1" WIDTH="780" CELLPADDING="5">
+	<TR>
+		<TD ALIGN="CENTER" WIDTH="50%">
+		Simpson's <A href="oj-stmnt.html">statement to the LAPD</A><BR> (source: Star magazine)
+		</TD>
+		<TD ALIGN="CENTER" WIDTH="50%">
+		Simpson's <A href="suicide.html">&quot;suicide&quot; letter</A>.
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER" ROWSPAN="2">
+		Simpson's Deposition:<BR>
+		<A href="oj_depo1.html">January 22, 1996</A><BR>
+		<A href="oj_depo2.html">January 23, 1996</A><BR>
+		<A href="oj_depo3.html">January 24, 1996</A><BR>
+		<A href="oj_depo4.html">January 25, 1996</A><BR>
+		<A href="oj_depo5.html">January 26, 1996</A><BR>
+		<A href="oj_depo6.html">February 22, 1996</A><BR>
+		<A href="oj_depo7.html">February 23, 1996</A><BR>
+		<A href="oj_depo8.html">February 26, 1996</A><BR>
+		<A href="oj_depo9.html">February 27, 1996</A>
+		</TD>
+		<TD ALIGN="CENTER">
+		Faye Resnick's Deposition:<BR>
+		<A href="fr_depo1.html">February 10, 1996</A><BR>
+		<A href="fr_depo2.html">February 11, 1996</A><BR>
+		<A href="fr_depo3.html">February 12, 1996</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Kato Kaelin's Deposition:<BR>
+		<A href="kk_depo1.html">February 14, 1996</A><BR>
+		<A href="kk_depo2.html">February 15, 1996</A><BR>
+		<A href="kk_depo3.html">February 20, 1996</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Cora Fischman's Deposition:<BR>
+		<A href="cf_depo1.html">March 19, 1996</A><BR>
+		<A href="cf_depo2.html">March 20, 1996</A><BR>
+		<A href="cf_depo3.html">March 21, 1996</A>
+		</TD>
+		<TD ALIGN="CENTER">
+		Christian Reichardt's Deposition:<BR>
+		<A href="cr_depo1.html">March 22, 1996</A><BR>
+		<A href="cr_depo2.html">March 25, 1996</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER" ROWSPAN="2">
+		AC Cowlings' Deposition:<BR>
+		<A href="ac_depo1.html">April 16, 1996</A><BR>
+		<A href="ac_depo2.html">April 17, 1996</A><BR>
+		<A href="ac_depo3.html">April 26, 1996</A><BR>
+		<A href="ac_depo4.html">May 15, 1996</A>
+		</TD>
+		<TD ALIGN="CENTER">
+		Kim Goldman's Deposition:<BR>
+		<A href="kg_depo1.html">February 5, 1996</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Fred Goldman's Deposition:<BR>
+		<A href="fg_depo1.html">February 9, 1996</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Robert Kardashian's Deposition:<BR>
+		<A href="rk_depo1.html">May 3, 1996</A>
+		</TD>
+		<TD ALIGN="CENTER">
+		Marcus Allen's Deposition:<BR>
+		<A href="ma_depo1.html">May 31, 1996</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Jason Simpson's Deposition:<BR>
+		<A HREF="js_depo1.html">May 8, 1996</A>
+		</TD>
+		<TD ALIGN="CENTER">
+		Lawrence Schiller's Deposition:<BR>
+		<A HREF="ls_depo1.html">June 7, 1996</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER">
+		Denise Brown's Deposition:<BR>
+		<A HREF="db_depo1.html">May 2, 1996</A>
+		</TD>
+		<TD ALIGN="CENTER">
+		Simpson's interview with<BR> <A href="oj_bet.html">Black Entertainment Television</A>.
+		</TD>
+	</TR>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+
+</CENTER>
+</BODY>
+</HTML>
