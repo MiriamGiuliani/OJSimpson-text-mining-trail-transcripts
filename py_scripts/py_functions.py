@@ -469,3 +469,132 @@ def preprocessing_transctipts_text(directory, df):
             # Append the df of each file under the previous one
             df = df.append(df1, ignore_index = True)
     return df
+
+#################################################################################################
+
+# ANAPHORA RESOLUTION AND NEGATION HANDLING
+# These functions perform a normalization of the test, so that a specific person is referred to
+# in a unique way
+
+def normalize_person_col(speech):
+    speech = re.sub(r'\b(?:ORENTHAL SIMPSON|THE DEFENDANT|MR. SIMPSON|OJ SIMPSON|O.J. SIMPSON|THE SUSPECT)\b', 'OJSIMPSON', str(speech))
+    speech = re.sub(r'\b(?:THE SIMPSON MATTER)\b', 'THE OJSIMPSON MATTER', str(speech))
+    speech = re.sub(r'\b(?:NICOLE|NICOLE BROWN|NICOLE BROWN SIMPSON|NICOLE SIMPSON|MISS BROWN|MISS SIMPSON|HIS WIFE|HIS EX-WIFE|OJSIMPSON\'S WIFE|OJSIMPSON\'S EX-WIFE)\b', 'NICOLEBROWN', str(speech))
+    speech = re.sub(r'\b(?:RONALD LYLE GOLDMAN|MR. GOLDMAN|RONALD GOLDMAN|RON GOLDMAN)\b', 'RONGOLDMAN', str(speech))
+    speech = re.sub(r'\b(?:YOUR HONOR|THE JUDGE|THE COURT|JUDGE ITO|MR. ITO|HONOR)\b', 'THECOURT', str(speech))
+    speech = re.sub(r'\b(?:THE VICTIMS|THE TWO VICTIMS|VICTIMS)\b', 'NICOLEBROWN&RONGOLDMAN', str(speech))
+    speech = re.sub(r'\b(?:THE JUROR|THE JURY|JURY|JUROR)\b', 'JURY', str(speech))
+    speech = re.sub(r'\b(?:MR\.\s)\b', 'MR', str(speech))
+    speech = re.sub(r'\b(?:MS\.\s)\b', 'MS', str(speech))
+    speech = re.sub(r'\b(?:MR\.)\b', 'MR', str(speech))
+    speech = re.sub(r'\b(?:MS\.)\b', 'MS', str(speech))
+    return speech
+
+def person_prefix_normalize(person):
+    person = person.replace(" ", "")
+    person = person.replace("#", "")
+    person = person.replace(":", "")
+    person = re.sub(r'\b(?:MR\.\s)\b', 'MR', person)
+    person = re.sub(r'\b(?:MS\.\s)\b', 'MS', person)
+    person = re.sub(r'\b(?:MR\.)\b', 'MR', person)
+    person = re.sub(r'\b(?:MS\.)\b', 'MS', person)
+    return person
+
+# Negation tagging
+# This function puts a tag (NEG_) on words that typically are used for negation
+def negation_handling(speech):
+    speech = re.sub(r'\b(?:NEVER|NO|NOTHING|NOWHERE|NOONE|NONE|NOT|HAVENT|HASNT|HADNT|CANT|COULDNT|SHOULDNT|WONT|WOULDNT|DONT|DOESNT|DIDNT|ISNT|ARENT|AINT|\'T)\b[\w\s]+[^\w\s]', 
+        lambda match: re.sub(r'(\s+)(\w+)', r'\1NEG_\2', match.group(0)), 
+        speech,
+        flags=re.IGNORECASE)
+    return speech
+
+# Manually normalize text based on dialog sequence for attorneys/court/jury
+def manual_anaphora_norm_dialogs(df, dream_team, prosecution, court):
+    nrows = df.shape[0]
+    for row in range(0, nrows-1):
+        # The court refers to the jury saying LADIES AND GENTLEMENT -> substitute "you" pronouns with "JURY"
+        if 'LADIES AND GENTLEMEN' in df.iloc[row, 6]:
+            df.iloc[row, 7] = re.sub(r'\b(?:YOU)\b', 'JURY', str(df.iloc[row, 6])) 
+        # Each person talking refers to him/herself with WE/I/ME/US -> substitute these pronouns with the name of the person talking
+        # Each person talking refers to the next person talking with YOU -> substitute this pronoun with the name of the next person talking
+        if any(ext in df.iloc[row, 0] for ext in dream_team) or any(ext in df.iloc[row, 0] for ext in prosecution) or any(ext in df.iloc[row, 0] for ext in court):
+            speech = df.iloc[row, 6]
+            speech = re.sub(r'\b(?:WE|I|ME|US|I\'M|I\'L)\b', df.iloc[row, 0], str(speech))
+            speech = re.sub(r'\b(?:YOU)\b', df.iloc[row + 1, 0], str(speech)) 
+            df.iloc[row, 7] = speech
+        else: 
+            df.iloc[row, 7] = df.iloc[row, 6]
+    return df
+
+# Manually normalize text based on family relationships, based on the time in which different
+# witnesses have been interrogated
+def anaphora_norm_family_members(df):
+    family = ['BAKER', 'SIMPSON','GOLDMAN','BROWN']
+    for row in range(90333, 90521):
+        #print(row)
+        person = df.iloc[row, 0]
+        # Feb 6th -> witness = Nicole Brown's sister
+        if any(ext in df.iloc[row, 0] for ext in family) and df.loc[row, 'date'] == 'FEBRUARY 6, 1995 ':
+            speech = df.iloc[row - 1, 6]
+            speech2 = df.iloc[row, 6]
+            # Example: when the word SISTER is used, replace it with the unique key used to identify Nicole Brown
+            speech = re.sub(r'SISTER', 'NICOLEBROWN', str(speech))
+            speech = re.sub(r'BROTHER-IN-LAW', 'OJSIMPSON', str(speech))
+            speech2 = re.sub(r'SISTER', 'NICOLEBROWN', str(speech2))
+            speech2 = re.sub(r'BROTHER-IN-LAW', 'OJSIMPSON', str(speech2))
+            df.iloc[row - 1, 7] = speech
+            df.iloc[row, 7] = speech2
+        # Feb 7th -> witness = Ron Goldman's brother
+        elif any(ext in df.iloc[row, 0] for ext in family) and df.loc[row, 'date'] == 'FEBRUARY 7, 1995 ':
+            speech = df.iloc[row - 1, 6]
+            speech2 = df.iloc[row, 6]
+            speech = re.sub(r'BROTHER', 'RONGOLDMAN', str(speech))
+            speech = re.sub(r'SISTER-IN-LAW', 'NICOLEBROWN', str(speech))
+            speech2 = re.sub(r'BROTHER', 'RONGOLDMAN', str(speech2))
+            speech2 = re.sub(r'SISTER-IN-LAW', 'NICOLEBROWN', str(speech2))
+            df.iloc[row-1, 7] = speech
+            df.iloc[row, 7] = speech2
+        # Mar 9th -> witness = Ron Goldman's father
+        elif any(ext in df.iloc[row, 0] for ext in family) and df.loc[row, 'date'] == 'MARCH 9, 1995 ':
+            speech = df.iloc[row - 1, 6]
+            speech2 = df.iloc[row, 6]
+            speech = re.sub(r'SON', 'RONGOLDMAN', str(speech))
+            speech = re.sub(r'DAUGHTER-IN-LAW', 'NICOLEBROWN', str(speech))
+            speech2 = re.sub(r'SON', 'RONGOLDMAN', str(speech2))
+            speech2 = re.sub(r'DAUGHTER-IN-LAW', 'NICOLEBROWN', str(speech2))
+            df.iloc[row-1, 7] = speech
+            df.iloc[row, 7] = speech2
+        # Mar 10th -> witness = OJ Simpson and N.Brown' child + OJ Simpson's brother + Ron Goldman's father
+        elif any(ext in df.iloc[row, 0] for ext in family) and df.loc[row, 'date'] == 'JULY 10, 1995\n':
+            speech = df.iloc[row - 1, 6]
+            speech2 = df.iloc[row, 6]
+            speech = re.sub(r'DAD', 'OJSIMPSON', str(speech))
+            speech = re.sub(r'FATHER', 'OJSIMPSON', str(speech))
+            speech = re.sub(r'MUM', 'NICOLEBROWN', str(speech))
+            speech = re.sub(r'MOTHER', 'NICOLEBROWN', str(speech))
+            speech = re.sub(r'SISTER-IN-LAW', 'NICOLEBROWN', str(speech))
+            speech = re.sub(r'DAUGHTER-IN-LAW', 'NICOLEBROWN', str(speech))
+            speech = re.sub(r'BROTHER', 'OJSIMPSON', str(speech))
+            speech = re.sub(r'SISTER-IN-LAW', 'NICOLEBROWN', str(speech))
+            speech2 = re.sub(r'DAD', 'OJSIMPSON', str(speech2))
+            speech2 = re.sub(r'FATHER', 'OJSIMPSON', str(speech2))
+            speech2 = re.sub(r'MUM', 'NICOLEBROWN', str(speech2))
+            speech2 = re.sub(r'MOTHER', 'NICOLEBROWN', str(speech2))
+            speech2 = re.sub(r'SISTER-IN-LAW', 'NICOLEBROWN', str(speech2))
+            speech2 = re.sub(r'DAUGHTER-IN-LAW', 'NICOLEBROWN', str(speech2))
+            speech2 = re.sub(r'BROTHER', 'OJSIMPSON', str(speech2))
+            speech2 = re.sub(r'SISTER-IN-LAW', 'NICOLEBROWN', str(speech2))
+            df.iloc[row-1, 7] = speech
+            df.iloc[row, 7] = speech2
+        # Mar 11th -> witness = OJ Simpson's brother 
+        elif any(ext in df.iloc[row, 0] for ext in family) and df.loc[row, 'date'] == 'JULY 11, 1995\n':
+            speech = df.iloc[row - 1, 6]
+            speech2 = df.iloc[row, 6]
+            speech = re.sub(r'BROTHER', 'OJSIMPSON',str(speech))
+            speech = re.sub(r'SISTER-IN-LAW', 'NICOLEBROWN', str(speech))
+            speech2 = re.sub(r'BROTHER', 'OJSIMPSON', str(speech2))
+            speech2 = re.sub(r'SISTER-IN-LAW', 'NICOLEBROWN', str(speech2))
+            df.iloc[row - 1, 7] = speech
+            df.iloc[row, 7] = speech2  
+    return df
