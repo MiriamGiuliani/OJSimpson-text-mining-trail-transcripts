@@ -34,24 +34,6 @@ def stemming(speech):
     stem = [ps.stem(el) for el in speech]
     return stem
 
-# Compute tf-idf
-tfidf_vectorizer = TfidfVectorizer(
-    min_df=3,
-    max_df=0.85,
-    ngram_range=(1, 1),
-    preprocessor=' '.join
-)
-
-# NMF Functions
-def get_nmf_topics(model, n_top_words, num_topics):
-    feat_names = tfidf_vectorizer.get_feature_names()
-    word_dict = {};
-    for i in range(num_topics):
-        words_ids = model.components_[i].argsort()[:-20 - 1:-1]
-        words = [feat_names[key] for key in words_ids]
-        word_dict['Topic # ' + '{:02d}'.format(i+1)] = words;  
-    return pd.DataFrame(word_dict)
-
 def get_descriptor(terms, H, topic_index, top ):
     # reverse sort the values to sort the indices
     top_indices = np.argsort( H[topic_index,:] )[::-1]
